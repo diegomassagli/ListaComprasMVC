@@ -1,62 +1,9 @@
-# =========================
-# Dependencias
-# =========================
 /vendor/
-composer.lock
-
-# =========================
-# Configuración sensible
-# =========================
+/node_modules/
+/src/
 .env
-.env.*
-/include/config/database.php
-
-# =========================
-# Cache / logs / temporales
-# =========================
-*.log
-/tmp/
-/cache/
-/storage/logs/
-
-# =========================
-# Uploads (si no deben versionarse)
-# =========================
-/public/uploads/
-/imagenes/
-/files/
-
-# =========================
-# Archivos generados
-# =========================
-/build/
-/dist/
-*.map
-
-# =========================
-# IDEs / Editores
-# =========================
-.vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
-
-# =========================
-# Sistema operativo
-# =========================
-.DS_Store
-Thumbs.db
-
-# =========================
-# Tests / coverage
-# =========================
-/coverage/
-.phpunit.result.cache
-
-# =========================
-# Servidores locales
-# =========================
-*.pid
-*.sock
-
-/node_modules
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging

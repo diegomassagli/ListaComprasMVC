@@ -23,7 +23,8 @@
       // Arreglo de rutas protegidas
       $rutas_protegidas = ['/listas', '/listas/crear', '/listas/actualizar', '/listas/eliminar', '/categorias', '/categorias/crear', '/categorias/actualizar', '/categorias/eliminar', '/articulos', '/articulos/crear', '/articulos/actualizar', '/articulos/eliminar'];
 
-      $urlActual = $_SERVER['PATH_INFO'] ?? '/';      
+      //$urlActual = $_SERVER['PATH_INFO'] ?? '/';      
+      $urlActual = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
       $metodo = $_SERVER['REQUEST_METHOD'];
       if($metodo === 'GET') {
         $fn = $this->rutasGET[$urlActual] ?? null;      
