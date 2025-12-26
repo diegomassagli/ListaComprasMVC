@@ -1,0 +1,79 @@
+.derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {    
+    align-items: flex-end;
+  }
+}
+.dark-mode-boton {
+  width: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  &:hover {
+    cursor: pointer;
+  }
+  @include tablet {     
+    margin-top: 0;
+  }
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.navegacion {
+  // display: none; como no se puede animar, lo cambio por visibility
+  // visibility: hidden;´
+  display: none;
+  opacity: 0;
+  transition: visibility .3s ease-in-out, opacity .5s linear;
+
+  @include tablet {
+    display: flex;    
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+  }
+  a {
+    color: $grisOscuro;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+    text-align: center;
+    @include tablet {
+      margin-right: 2rem;
+      font-size: 1.8rem;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+/** menu de hamburguesa **/
+.mobile-menu {
+  @include tablet {
+    display: none;
+  }
+  
+  img {
+    width: 5rem;
+  }
+}
+
+
+.mostrar {
+  // visibility: visible;
+  display: block;
+  opacity: 1;
+}

@@ -1,0 +1,83 @@
+table.categoria {  
+  margin: 4rem auto 0 auto;
+  width: 100%;
+  border-spacing: 0;
+
+  thead {
+    background-color: $verde;
+  
+    th {
+      color: $blanco;
+      padding: 1rem;
+    }
+  }
+  tbody td{
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 1rem;
+  }
+
+}
+
+
+
+.main-categorias {
+  display: flex;
+  flex-direction: column;  
+  margin-bottom: 10rem;
+}
+.main-categorias form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-categorias form select {  
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+.main-categorias .nombre {
+  padding: 1.5rem;
+  border: 1px solid $gris;
+  border-radius: 0.8rem;
+  background-color: white;
+  width: 40rem;  
+}
+.main-categorias select {
+  width: 40rem;
+}
+
+.main-categorias form button {
+  padding: 2rem;
+  background-color: $amarillo;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  color: $blanco;
+  width: 40rem;
+}
+.main-categorias form button:hover {
+  background-color: rgb(231, 166, 25);
+  color: $negro;
+  cursor: pointer;
+}
+.contenedor-categorias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.categoria {
+  background-color: $blanco;
+  border: 1px solid $gris;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.categoria p {
+  margin: 0;
+}

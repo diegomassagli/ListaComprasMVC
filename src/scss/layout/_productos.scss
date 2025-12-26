@@ -1,0 +1,122 @@
+.main-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.main-productos form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-productos .nombre {
+  padding: 1.5rem;
+  border: 1px solid $gris;
+  border-radius: 0.8rem;
+  background-color: white;
+  width: 30rem;  
+  max-width: 40rem;
+  margin-bottom: 5rem;    
+}
+.main-productos form button {
+  padding: 2rem;
+  background-color: $amarillo;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  color: $blanco;
+  width: 40rem;
+}
+.main-productos form button:hover {
+  background-color: rgb(231, 166, 25);
+  color: $negro;
+  cursor: pointer;
+}
+.contenedor-productos {
+  @include grid(4,2rem);  
+}
+@include tablet {
+  .contenedor-productos {
+    @include grid(6,2rem);
+  }
+}
+
+
+.contenedor-productos .producto {
+  background-color: $blanco;
+  border: 1px solid $gris;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 10rem;
+  text-align: center;
+}
+
+.contenedor-productos .producto p {
+  margin: 0;
+}
+
+table.lista-articulos {  
+  margin: 4rem auto 0 auto;
+  width: 100%;
+  border-spacing: 0;
+  line-height: 1;
+
+  thead {
+    background-color: $verde;
+  
+    th {
+      color: $blanco;
+      padding: 1rem;
+    }
+  }
+  tbody tr {
+    transition: background-color 0.15s ease-in-out;
+  }
+  tbody tr:hover {
+    background-color: #eaf6ff;
+  }
+
+  tbody td{
+    border-bottom: 1px solid #ddd; 
+  }
+  .acciones {
+    display: flex;
+  }
+  .imagen-tabla {
+    width: 2.5rem;
+  }
+
+}
+
+.trash-submit {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    cursor: pointer;
+
+    background-image: url("/build/img/trash.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* Quitar cualquier estilo del input */
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn-edit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: none;
+    padding: 0;
+}
+
+.btn-edit img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}

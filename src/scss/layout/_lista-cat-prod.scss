@@ -1,0 +1,20 @@
+
+
+.articulos {
+  width: 10rem;
+  height: 7rem;
+  border-radius: 0.2rem;
+  text-align: center;  
+  cursor: pointer;
+  background-color: #c8caca;
+}
+.articulos.elegido {
+  background-color: #62d7c6;
+}
+
+.busqueda-categorias {
+  .busqueda-categoria {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}

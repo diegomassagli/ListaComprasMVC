@@ -1,0 +1,71 @@
+.contenido-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+}
+.enlace {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  max-width: 40rem;  
+  background-color: $gris;
+  padding: 1rem 10rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+  color: $grisOscuro;
+  &:hover {
+    background-color: gray;
+    color: $blanco;
+  }
+}
+.enlace span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grisOscuro;
+  color: $blanco;
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+}
+.listas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  max-width: 80rem;
+  width: 100%;
+}
+.lista {
+  background-color: $blanco;
+  border: 1px solid $gris;
+  border-radius: 1rem;
+  padding: 2rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  width: 40rem;
+  max-width: 80rem;  
+}
+.lista span {
+  background-color: $rojo;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: $blanco;
+  font-size: 1.3rem;
+}
+.enlace-lista {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
